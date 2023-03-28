@@ -1,0 +1,201 @@
+*{
+    /* Default setting for css */
+    padding: 0%;
+    margin: 0px;
+    
+}
+
+a{
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    color: rgb(61, 61, 61);
+}
+
+
+.all-content{
+    /* Aiding responsiveness by giving a maximum width to content */
+    max-width: 1240px;
+    margin: auto;
+}
+
+header{
+    text-align: center;
+    padding: 30px;
+    color: rgba(16, 127, 186);
+}
+
+li{
+    list-style: none;
+    transition: all 0.3s ease;
+}
+
+
+h1{
+    font-size: 50px;
+}
+
+main{
+    margin: 5% 10%;
+    padding:20px  5%;
+    padding-bottom: 1px ;
+    color: rgb(117,117,117);
+    background-color: rgba(16, 127, 186, 0.9);
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/*-----------Editing a news posting---------*/
+
+.news{
+    background-color: inherit;
+    padding: 10px 10px 30px 10px;
+    color: black;
+    display: flex;
+    border-bottom: 1px solid rgba(44, 50, 150, 0.315);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.news img{
+    border-radius: 200px;
+}
+
+button{
+    cursor: pointer;
+    padding: 5px 6px;
+    background-color: rgb(25, 24, 24);
+    color: white;
+    display: block;
+    border: none;
+    outline: none;
+    margin: 5px;
+    width: 80px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+button:hover{
+    background-color: rgb(87, 86, 86);
+}
+
+button:active{
+    background-color: rgba(16, 127, 186, 0.9);
+}
+
+.news div{
+    padding-right: 10px ;
+}
+
+.news p{
+    margin: 10px 0px;
+}
+
+.news img{
+    border-radius: 200px;
+    width: 120px;
+}
+
+
+
+
+
+
+/*---------Pagination Links-----------*/
+
+.pagination {
+    width: fit-content;
+    margin: 20px auto;
+}
+
+
+.pagination ul{
+    display: flex;
+}
+
+.pagination li{
+    cursor: pointer;
+    padding: 4px 30px;
+    background-color: rgba(16, 127, 186);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+
+}
+
+.pagination li:hover{
+    color: white;
+    background-color: black;
+}
+
+.pagination li:active{ 
+    color:  black;
+    background-color: white;
+}
+
+
+
+
+/*Editing the form to update the news*/
+#update_news{
+    display: none;
+    position:fixed;
+    top: 0vh;
+    left: 0vh;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0px 4px 40px 4px rgba(19, 54, 168, 0.11);
+}
+
+
+#update_news div{
+    padding: 50px 10px;
+    width: max-content;
+    margin: auto;
+}
+
+
+
+#update_news button{
+    margin: auto;
+}
+
+#update_news input{
+    width: 400px;
+    max-width: 60vw;
+    padding: 5px 10px;
+}
+
+#update_news label{
+    min-width: 100px;
+    padding: 5px;
+    text-align: left;
+}
+
+
+
+@media screen and (max-width:600px) {
+
+    main{
+        margin: 5vw;
+    }
+    .news{
+        display: block;
+        font-size: 14px;
+    }
+
+    .news img{
+        border-radius: 200px;
+        width: 100px;
+    }
+
+    #update_news{
+        padding: 10vh 1vw;
+    }
+}
