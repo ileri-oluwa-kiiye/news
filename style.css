@@ -5,6 +5,11 @@
     
 }
 
+body{
+    background: rgb(10, 10, 10);
+    color: rgba(255, 255, 255, 0.8);
+}
+
 a{
     transition: all 0.3s ease;
 }
@@ -22,8 +27,7 @@ a:hover{
 
 header{
     text-align: center;
-    padding: 30px;
-    color: rgba(16, 127, 186);
+    padding: 7vh 10px;
 }
 
 li{
@@ -41,7 +45,7 @@ main{
     padding:20px  5%;
     padding-bottom: 1px ;
     color: rgb(117,117,117);
-    background-color: rgba(16, 127, 186, 0.9);
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
 }
 
@@ -121,7 +125,7 @@ button:active{
 .pagination li{
     cursor: pointer;
     padding: 4px 30px;
-    background-color: rgba(16, 127, 186);
+    background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.4);
 
 }
@@ -177,6 +181,14 @@ button:active{
     padding: 5px;
     text-align: left;
 }
+
+
+
+
+
+
+
+
 
 
 

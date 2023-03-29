@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The title of the page -->
+    <title>News</title>
+    
+    <!-- Meta tags for SEO optimisation -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta charset="UTF-8">
+    <meta name="desciption" content="Cryptocurrency Clone">
+    <meta name="author" content="Ilerioluwakiiye">
+
+    <!-- Links for external files -->
+    <link rel="stylesheet" href="news.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+
+    <!-- Links to Goo=gle fonts and Animate on scroll library respectively -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxanium">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+
+<body>
+    <div class="allcontent">
+        <!-- This file is to show the details of a news when clicked in the home page -->
+
+        <h1 id="title">News Title</h1> 
+        <p id="author">By: Author</p>
+
+        
+        
+        <!-- This is to create a carousel of images using the information from the images api -->
+            <div class="carousel">
+                <div class="carousel__item"><img src="img/img1.png" alt=""></div>
+                <div class="carousel__item"><img src="img/img2.png" alt=""></div>
+                <div class="carousel__item"><img src="img/img3.png" alt=""></div>
+            </div>
+
+
+
+        <div id="comments">
+            <h3>Comments:</h3>
+
+            <div class="comment">
+                <input type="text" value="The comment goes here" readonly>
+                <span class="ctrls">
+                    <img src="img/edit.png" alt="">
+                    <img src="img/delete.png" alt="">
+                </span>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="js/carousel.js"></script>
+<script src="js/news.js" type="module" ></script>
+</html>
