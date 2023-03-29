@@ -11,6 +11,6 @@ Clicking the news should take you to a new page that’ll display the news selec
 I also made use of modular JavaScript to integrate the functionality into the site.
 
 # Live Url
-This site has been hosted, and is constantly being updated <a href="ileri-first-stage.netlify.app">HERE</a>
+This site has been hosted, and is constantly being updated <a href="https://ileri-first-stage.netlify.app">HERE</a>
 
 This site is also very mobile responsive.
