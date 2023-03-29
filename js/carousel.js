@@ -1,5 +1,5 @@
 
-// This is tp create an image carousel
+// This is t0 create an image carousel
 const carousel = () =>{
     document.querySelectorAll(".carousel").forEach((carousel) => {
         const items = carousel.querySelectorAll(".carousel__item");

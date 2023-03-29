@@ -29,8 +29,9 @@
     // set the src attribute for the image
     img.setAttribute('src', avatarUrl);
     // set the alt attribute for the image
-    img.setAttribute('alt', 'Avatar');
+    img.setAttribute('alt', 'No available avatar');
     // append the image to the news div
+    img.style.cursor = "pointer"
     newsDiv.appendChild(img);
 
 
@@ -40,6 +41,8 @@
     // create an h2 element
     const h2 = document.createElement('h2');
     // set the text content for the h2
+
+    h2.style.cursor = "pointer"
     h2.innerHTML = title ;
     // append the h2 to the first div
     firstDiv.appendChild(h2);
@@ -70,14 +73,14 @@
 
     //Create the delete button
     const deleteButton = document.createElement('button');
-    deleteButton.innerHTML = "Update"
+    deleteButton.innerHTML = "Delete"
     //Append to second div
     secondDiv.appendChild(deleteButton)
 
 
     //Create the update button
     const updateButton = document.createElement('button');
-    updateButton.innerHTML = "Delete"
+    updateButton.innerHTML = "Update"
     //Append to second div
     secondDiv.appendChild(updateButton)
 
@@ -86,15 +89,21 @@
 
 
 
-    // To add links to each newsItem to navigate to the news.html file
-    newsDiv.addEventListener('click', (event) => {
+    // To add links to each newsItem img to navigate to the news.html file
+    img.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = `/trial/news.html?id=${newsObject.id}`;
+    });
+
+    // To add links to each newsItem img to navigate to the news.html file
+    h2.addEventListener('click', (event) => {
         event.preventDefault();
         window.location.href = `/trial/news.html?id=${newsObject.id}`;
     });
 
 
     section.appendChild(newsDiv)
-    
+
 }
 
 

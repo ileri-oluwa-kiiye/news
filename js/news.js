@@ -25,6 +25,7 @@ const updatePage = () => {
     });
 
 
+    
 
     //TO update the image slider
     let urlImage = url + "/images"
@@ -34,6 +35,8 @@ const updatePage = () => {
                 console.log(newsItem[i].image)
             }
     });
+
+
 
 
     //To get comments based on Id

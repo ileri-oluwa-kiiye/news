@@ -1,3 +1,4 @@
+// import myFetch  from "./fetch.js";
 import getNewsPerPage from "./getNews.js";
 
 const Pagination = () => {
@@ -50,6 +51,4 @@ const Pagination = () => {
 }
 
 
-
-
-Pagination()
+export default Pagination
