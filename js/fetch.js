@@ -1,6 +1,7 @@
 
 /* Custom fetch function that returns a promise */
 function myFetch(url, type, data) {
+    
     // For the GET method
     if (type === "GET") {
     return fetch(url, {

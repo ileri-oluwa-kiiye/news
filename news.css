@@ -3,6 +3,9 @@
     /* Default setting for css */
     padding: 0%;
     margin: 0px;
+    font-family: 'Libre Caslon Display', serif;
+    font-weight: 5rem;
+    font-size: 1.2rem;
     
 }
 
@@ -122,5 +125,9 @@ h1{
 
     h1{
         font-size: 30px;
+    }
+
+    .comment input{
+        font-size: 13px;
     }
 }

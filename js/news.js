@@ -40,10 +40,6 @@ const updatePage = () => {
     let urlComment = url + "/comments"
     myFetch( urlComment , "GET")
         .then(newsIteem => {
-            //This is the wrap div of the comments
-            // let comments = document.getElementById("comments");
-
-
 
             function updateComment (comment) {
                 //A funstion that runs to update the comments 
