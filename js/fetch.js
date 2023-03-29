@@ -35,7 +35,7 @@ function myFetch(url, type, data) {
         else { console.log("HTTP request unsuccessful") }
         return res
     })
-    .catch(error => error)
+    .catch(error => console.log(error))
     }
 
  

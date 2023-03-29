@@ -26,7 +26,7 @@ const Pagination = () => {
 
     // The event listener to move to the next news page
     nextPage.addEventListener('click', () => {
-        if (pageCount.innerHTML < 7) {
+        if (pageCount.innerHTML < 6) {
             previousPage.style.display = "block"
             pageCount.innerHTML ++ 
             getNewsPerPage(pageCount.innerHTML)
@@ -36,18 +36,17 @@ const Pagination = () => {
         }
     });
 
+    getNewsPerPage(pageCount.innerHTML)
 
 
+    //To make the page refresh every 2 seconds
+    // setInterval(() =>(
 
-
-    // getNewsPerPage(pageCount.innerHTML)
-
-    setInterval(() =>(
-
-        getNewsPerPage(pageCount.innerHTML)
-    ), 1000)
+    //     getNewsPerPage(pageCount.innerHTML)
+    // ), 3000)
 
 }
+
 
 
 
