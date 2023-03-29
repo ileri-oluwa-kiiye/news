@@ -71,6 +71,11 @@ main{
     border-radius: 200px;
 }
 
+.news h2{
+    width: 400px;
+    max-width: 70vw;
+}
+
 button{
     cursor: pointer;
     padding: 5px 6px;
