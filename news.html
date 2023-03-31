@@ -36,27 +36,50 @@
         
         
         <!-- This is to create a carousel of images using the information from the images api -->
-            
             <div class="carousel" id="images">
                 <!-- <div class="carousel__item"><img src="img/img1.png" alt=""></div> -->
             </div>
 
 
+            <section id="form">
+                <form>
+                <!-- This form is to add a comment -->
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" value="">
+                    </div>
+    
+                    <div>
+                        <label for="comment">Comment:</label>
+                        <input type="text" name="comment" id="comment" value="">
+                    </div>
 
-        <div id="comments">
+                   <div>
+                    <label for="Avatar">Avatar</label>
+                    <input type="text" name="avatar" id="avatar" value="">
+                    </div>
+
+                    <button>Add</button>
+                    <div id="cancel">Cancel</div>
+                </form>
+            </section>
+
+
+
+        <div id="comments" class="comments">
             <h3>Comments:</h3>
+                <button id="addcomment">Add New Comment</button>
+            </form>
 
-            <div class="comment">
-                <!-- <input type="text" value="The comment goes here" readonly>
+            <!-- <div class="comment">
+                <input type="text" value="The comment goes here" readonly>
                 <span>
                     <img src="img/edit.png" alt="">
                     <img src="img/delete.png" alt="">
-                </span> -->
-            </div>
-
+                </span>
+            </div> -->
         </div>
     </div>
 </body>
 <script src="js/news.js" type="module" ></script>
-<!-- <script src="js/carousel.js"></script> -->
 </html>

@@ -31,11 +31,7 @@ const newsImg = (image) => {
     let outerDiv =  document.getElementById("images")
     outerDiv.appendChild(div)
 
-    //    document.getElementById("images").appendChild(div)
 
-    //    console.log(img)
-
-       console.log(outerDiv)
 
 
 }

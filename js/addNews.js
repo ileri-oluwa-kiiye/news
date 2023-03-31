@@ -31,7 +31,7 @@ const addNews = () => {
             e.preventDefault()
             alert("Fill all the necessary fields before submitting")
 
-            addNewsButton.style.display = "none"
+            // addNewsButton.style.display = "none"
         }
 
         else{

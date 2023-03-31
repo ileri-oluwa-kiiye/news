@@ -1,8 +1,10 @@
 import myFetch  from "./fetch.js";
 //import the module required to fetch data from the api
 
+import addComment from "./addComment.js";
 import newsImg from "./newsImg.js";
 import carousel from "./carousel.js";
+
 
 
 
@@ -68,6 +70,9 @@ const updatePage = () => {
 
 
 updatePage()
+
+
+document.getElementById("addcomment").addEventListener( "click", addComment )
 
 
 setInterval( updatePage, 60000)
