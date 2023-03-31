@@ -35,8 +35,11 @@ const addComment = () => {
 
         else{
 
+            e.preventDefault()
             const urlParams = new URLSearchParams(window.location.search);
             const newsItemId = urlParams.get('id');
+
+            
 
             let data = {
                 "newsId" : newsItemId,
@@ -57,6 +60,8 @@ const addComment = () => {
         }
 
         newname, newAvatar, newcomment  = ""
+
+        location.reload()
     })
 
 }

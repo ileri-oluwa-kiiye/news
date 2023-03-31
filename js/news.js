@@ -3,6 +3,7 @@ import myFetch  from "./fetch.js";
 
 import addComment from "./addComment.js";
 import newsImg from "./newsImg.js";
+import createComment from "./createComment.js";
 import carousel from "./carousel.js";
 
 
@@ -56,14 +57,8 @@ const updatePage = () => {
     let urlComment = url + "/comments"
     myFetch( urlComment , "GET")
         .then(newsIteem => {
-
-            function updateComment (comment) {
-                //A funstion that runs to update the comments 
-                console.log(comment)
-            }
-
             for ( let i=0; i< newsIteem.length; i++){
-                updateComment(newsIteem[i].comment)
+                createComment(newsIteem[i])
             }
     });
 }
