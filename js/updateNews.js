@@ -1,12 +1,21 @@
 import myFetch from "./fetch.js"
 
 
-const updateNews = () => {
+const updateNews = (newsObject) => {
     
+    //Get all parameters in the news object
+    let author = newsObject.author;
+    let avatarUrl = newsObject.avatar;
+    let title = newsObject.title.toUpperCase();
+    let url = newsObject.url
+    let newsId = newsObject.id
 
     
-    let updateNewsButton = document.getElementById("form")
-    updateNewsButton.style.display = "block"
+    // Let the input contain their values for easy changes 
+    document.getElementById("author").value = author
+    document.getElementById("avatar").value = avatarUrl
+    document.getElementById("title").value = title
+    document.getElementById("url").value = url
 
 
     // In case the cancel button is clicked instead
@@ -17,10 +26,12 @@ const updateNews = () => {
     })
 
 
+    let updateNewsButton = document.getElementById("form")
+
+
     //  On submit, we make sure the fields are correctly filled, then proceed to post the news.
     updateNewsButton.addEventListener('submit', (e) => {
         console.log("worked")
-        // This  is to get all the values in the form
         let newAuthor = document.getElementById("author").value
         let newAvatar = document.getElementById("avatar").value
         let newTitle = document.getElementById("title").value
@@ -28,16 +39,12 @@ const updateNews = () => {
 
 
         if (newAuthor=="" || newAvatar == "" || newTitle == "" || newUrl == "") {
-
             e.preventDefault()
             alert("Fill all the necessary fields before submitting")
-
             updateNewsButton.style.display = "none"
         }
 
         else{
-
-
             e.preventDefault()
 
             let data = {
@@ -47,9 +54,9 @@ const updateNews = () => {
                 "url" : newUrl
             }
 
-            let url = "https://61924d4daeab5c0017105f1a.mockapi.io/credo/v1/news/"
+            let url = "https://61924d4daeab5c0017105f1a.mockapi.io/credo/v1/news/" + newsId
 
-            myFetch( url , "POST", data ).then(res => console.log(res));
+            myFetch( url , "PUT", data ).then(res => console.log(res));
             updateNewsButton.style.display = "none"
 
         }

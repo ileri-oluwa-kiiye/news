@@ -1,6 +1,12 @@
  // This function is to assemble all the news per page
 
+
+
+ import updateNews from "./updateNews.js";
+ 
  import deleteNews from "./deleteNews.js";
+
+
  
 const createNews = (newsObject) =>{
     
@@ -97,17 +103,19 @@ const createNews = (newsObject) =>{
     secondDiv.appendChild(updateButton)
 
 
-    updateButton.addEventListener('click', () => {
-        let answer = prompt("Are you sure you want to delete this?")
-        if (answer.toLowerCase() == "yes" ){
-            deleteNews(newsId)
-        }else{
-            alert("Deletion cancelled, type 'yes' if you want to delete")
-        }
-    });
+    // Add functionality to the update button
 
     // Add the secondDiv to the newsDiv 
     newsDiv.appendChild(secondDiv)
+
+
+    updateButton.addEventListener( 'click',  () => {
+        // MAKE THE UPDATE FORM VISIBLE
+        let updateNewsButton = document.getElementById("form")
+        updateNewsButton.style.display = "block"
+
+        updateNews(newsObject)
+    } );
 
 
 
