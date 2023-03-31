@@ -23,7 +23,6 @@ const createNews = (newsObject) =>{
     // console.log(section)
 
 
-
     //Creating the html div for the news and its elements
     const newsDiv = document.createElement('div');
     // set the class attribute for the div
