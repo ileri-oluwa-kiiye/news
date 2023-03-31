@@ -7,7 +7,7 @@
 }
 
 body{
-    background: rgb(10, 10, 10);
+    background: rgb(28, 57, 156 );
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -46,7 +46,7 @@ main{
     padding:20px  5%;
     padding-bottom: 1px ;
     color: rgb(117,117,117);
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.869);
     border-radius: 10px;
 }
 
