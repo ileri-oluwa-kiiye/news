@@ -247,7 +247,7 @@ div#cancel:hover{
         min-height: 70vh;
     }
 
-    #form button , #cancel {
+    #form button , div#cancel {
 
     margin-left: calc(50vw - 70px);
     }
