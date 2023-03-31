@@ -213,11 +213,6 @@ button:active{
         font-size: 14px;
     }
 
-    .news img{
-        border-radius: 200px;
-        width: 100px;
-        
-    }
 
     #form{
         padding: 10vh 1vw;
@@ -225,5 +220,12 @@ button:active{
         left: 3vh;
         max-width: 90vw;
         min-height: 70vh;
+    }
+
+
+    .news img{
+        border-radius: 200px;
+        width: 100px;
+        height: 100px;
     }
 }
