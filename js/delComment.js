@@ -19,7 +19,9 @@ const deleteComment = (commentObject) => {
 
     //Delete news item 
     myFetch(url, type )
-    location.reload();
+    setTimeout( () => {
+        location.reload();
+    } , 2000)
 
 
 

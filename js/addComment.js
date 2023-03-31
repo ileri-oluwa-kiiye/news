@@ -52,7 +52,7 @@ const addComment = () => {
 
             let url = "https://61924d4daeab5c0017105f1a.mockapi.io/credo/v1/news/" + newsItemId + "/comments"
 
-            // console.log(url)
+            console.log(url)
 
             myFetch( url , "POST", data ).then(res => console.log(res));
             addCommentButton.style.display = "none"
@@ -61,7 +61,10 @@ const addComment = () => {
 
         newname, newAvatar, newcomment  = ""
 
-        location.reload()
+        setTimeout( () => {
+            location.reload();
+        } , 2000)
+    
     })
 
 }
