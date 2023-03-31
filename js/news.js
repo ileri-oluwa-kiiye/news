@@ -1,6 +1,9 @@
 import myFetch  from "./fetch.js";
 //import the module required to fetch data from the api
 
+import newsImg from "./newsImg.js";
+import carousel from "./carousel.js";
+
 
 
 //This function  is to update the Data in this page.
@@ -32,9 +35,17 @@ const updatePage = () => {
     myFetch( urlImage , "GET")
         .then(newsItem => {
             for ( let i=0; i< newsItem.length; i++){
-                console.log(newsItem[i].image)
+
+
+                // console.log(newsItem[i].image)
+
+                newsImg(newsItem[i].image)
+
             }
+
+            carousel()
     });
+    
 
 
 

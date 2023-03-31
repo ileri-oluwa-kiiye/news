@@ -44,5 +44,5 @@ const carousel = () =>{
         
 }
 
-carousel()
+export default carousel
 

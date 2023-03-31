@@ -121,13 +121,13 @@ const createNews = (newsObject) =>{
     // To add links to each newsItem img to navigate to the news.html file
     img.addEventListener('click', (event) => {
         event.preventDefault();
-        window.location.href = `/trial/news.html?id=${newsObject.id}`;
+        window.location.href = `/news.html?id=${newsObject.id}`;
     });
 
     // To add links to each newsItem img to navigate to the news.html file
     h2.addEventListener('click', (event) => {
         event.preventDefault();
-        window.location.href = `/trial/news.html?id=${newsObject.id}`;
+        window.location.href = `/news.html?id=${newsObject.id}`;
     });
 
 
