@@ -31,6 +31,9 @@
                 <h1>News</h1>
                 <h3>Check out the trending news of the season...</h3>
             </header>
+
+            <button id="addnews">Add News</button>
+
             <main>
             <!-- The main tag contains all the news -->
                 <section id="active_page">
@@ -66,29 +69,37 @@
                 </ul>
             </div>
 
-            <section id="update_news">
-                <form onsubmit="alert('worked')">
+            <section id="form">
+                <form>
                 <!-- This form is to update the News via id -->
                     <div>
                         <label for="title">Title:</label>
-                        <input type="text" name="title" id="title" value="Title">
+                        <input type="text" name="title" id="title" value="">
                     </div>
     
                     <div>
                         <label for="author">Author:</label>
-                        <input type="text" name="author" id="author" value="Author">
+                        <input type="text" name="author" id="author" value="">
                     </div>
     
                    <div>
                         <label for="Url">Url:</label>
-                        <input type="text" name="url" id="url" value="url">
+                        <input type="text" name="url" id="url" value="">
                     
                    </div>
+
+                   <div>
+                    <label for="Avatar">Avatar</label>
+                    <input type="text" name="url" id="avatar" value="">
+                
+                    </div>
                     <button>Update</button>
+                    <button id="cancel">Cancel</button>
                 </form>
             </section>
         </div>
 
     </body>
     <script src="js/index.js" type="module"></script>
+    <script src="js/addNews.js" type="module"></script>
 </html>

@@ -1,15 +1,20 @@
-import myFetch from "./fetch";
+import myFetch from "./fetch.js";
 
-const deleteNews = (id) => {
+const deleteNews = async (id) => {
+    //THis function is used to delete the selected news by using the id
+
 
     // This is to get the url for deleting from the api 
     let url = "https://61924d4daeab5c0017105f1a.mockapi.io/credo/v1/news/" + id;
     console.log(url); 
 
-    //Delete news item
-    myFetch( url, "DELETE").then(res => console.log(res))
+    let type = "DELETE"
 
+    //Delete news item 
+    myFetch(url, type )
+    
 }
+
 
 
 export default deleteNews

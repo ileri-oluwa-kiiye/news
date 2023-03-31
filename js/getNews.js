@@ -14,9 +14,10 @@ const getNewsPerPage = (pageNumber) => {
         allNews => {
 
         //In the document, we have to access the covering div of the news per page
-        //This is to remove all content of the section covering div before updating
         let section = document.getElementById("active_page")
 
+
+        //This is to remove all content of the section covering div before updating
         section.innerHTML = ""
             for ( let i=0; i< allNews.length; i++){
                 createNews(allNews[i])

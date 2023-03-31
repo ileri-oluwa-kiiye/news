@@ -1,4 +1,4 @@
-// import myFetch  from "./fetch.js";
+
 import getNewsPerPage from "./getNews.js";
 
 const Pagination = () => {
@@ -27,7 +27,7 @@ const Pagination = () => {
 
     // The event listener to move to the next news page
     nextPage.addEventListener('click', () => {
-        if (pageCount.innerHTML < 7) {
+        if (pageCount.innerHTML < 6) {
             previousPage.style.display = "block"
             pageCount.innerHTML ++ 
             getNewsPerPage(pageCount.innerHTML)
@@ -37,18 +37,17 @@ const Pagination = () => {
         }
     });
 
+    getNewsPerPage(pageCount.innerHTML)
 
 
+    
 
-
-    // getNewsPerPage(pageCount.innerHTML)
-
+    // To make the page refresh every 2 seconds
     setInterval(() =>(
 
         getNewsPerPage(pageCount.innerHTML)
-    ), 1000)
+    ), 3000)
 
 }
-
 
 export default Pagination
